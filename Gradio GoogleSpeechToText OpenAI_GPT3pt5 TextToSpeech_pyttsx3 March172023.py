@@ -1,6 +1,5 @@
 ## pip install google-cloud-speech
-# https://github.com/hackingthemarkets/chatgpt-api-whisper-api-voice-assistant
-# https://www.youtube.com/watch?v=Si0vFx_dJ5Y
+# This code works on Windows 10
 # The provided code uses Gradio for creating a user interface, 
 # Google Cloud Speech-to-Text for transcribing audio input, and 
 # OpenAI GPT-3.5 Turbo for generating responses based on the transcribed text. 
@@ -18,7 +17,7 @@ import json
 
 warnings.filterwarnings("ignore", category=UserWarning, module="gradio.processing_utils")
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:/Users/CGY32339W10/Documents/Python/rising-area-380904-dda3fa3d8e98.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:/Users/your/path/to/google_credentials.json"
 openai.api_key = config.OPENAI_API_KEY
 
 messages = [{"role": "system", "content": 'You are a Python coach. Respond to all input in 250 words or less.'}]
